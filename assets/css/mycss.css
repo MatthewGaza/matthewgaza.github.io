@@ -50,7 +50,9 @@
     font-family: "AvenirNextLTPro-Regular";
     font-size: 40px;
 }
-
+nav a{
+    color:black;
+}
 nav {
     background: rgba(0, 0, 0, 1);
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.63) 69%, rgba(0, 0, 0, 0.63) 100%);
