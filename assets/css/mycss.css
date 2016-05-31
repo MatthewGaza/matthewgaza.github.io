@@ -1,139 +1,3 @@
-@charset "UTF-8" html,
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    margin: 0;
-    padding: 0
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block
-}
-
-body {
-    line-height: 1
-}
-
-ol,
-ul {
-    list-style: none
-}
-
-blockquote,
-q {
-    quotes: none
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: none
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0
-}
-
-html,
-body,
-main {
-    height: 100%;
-    width: 100%;
-}
 /* Actual CSS Code */
 
 @font-face {
@@ -143,16 +7,17 @@ main {
     font-style: normal;
 }
 
-body {
+.header {
     background-color: #eff3f3;
-    background-image: url(../img/background.jpg);
+    background-image: url(../img/reflection1.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    background-position: center;
 }
 
-header {
+.header header {
     font-family: "AvenirNextLTPro-Regular";
     text-align: center;
     font-size: 75px;
@@ -166,11 +31,12 @@ header {
     top: 50%;
 }
 
-h3 {
+.header h3 {
     text-align: center;
     font-family: "AvenirNextLTPro-Regular";
     position: relative;
-    top: 50%;
+    top: 52%;
+    font-size: 1.7em;
 }
 
 .Aphead {
@@ -179,41 +45,44 @@ h3 {
     font-size: 30px;
 }
 
-h2 {
+.header h2 {
     text-align: center;
     font-family: "AvenirNextLTPro-Regular";
     font-size: 40px;
 }
 
-.Abt {
-    background: rgba(239, 243, 243, .5);
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 10px;
-    border-radius: 20px;
-    font-family: "AvenirNextLTPro-Regular";
-}
-
 nav {
-    background-color: rgba(0, 0, 0, .8);
-}
-
-li {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-family: "AvenirNextLTPro-Regular";
-    color: white;
+    background: rgba(0, 0, 0, 1);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.63) 69%, rgba(0, 0, 0, 0.63) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(69%, rgba(0, 0, 0, 0.63)), color-stop(100%, rgba(0, 0, 0, 0.63)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.63) 69%, rgba(0, 0, 0, 0.63) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.63) 69%, rgba(0, 0, 0, 0.63) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.63) 69%, rgba(0, 0, 0, 0.63) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.63) 69%, rgba(0, 0, 0, 0.63) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0);
+    height: 75px;
 }
 
 nav ul li {
+    line-height: 75px;
+    font-family: "AvenirNextLTPro-Regular";
+    color: white;
     display: inline-block;
     list-style-type: none;
+    text-align: center;
 }
 
-a {
+nav {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+nav a {
     text-decoration: none;
+    text-align: center;
+    width: 150px;
+    height: 100%;
+    display: inline-block;
 }
 
 a:visited {
@@ -223,6 +92,127 @@ a:visited {
 li:hover {
     background: gray;
 }
+
+.Info-Wrapper {
+    height: 200px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F1F1F1;
+}
+
+.info-content {
+    width: 70%;
+    position: absolute;
+    right: 0;
+    line-height: 35px;
+}
+
+.info-content h1 {
+    font-family: "AvenirNextLTPro-Regular";
+    font-size: 1.4em;
+}
+
+.AB {
+    width: 90%;
+    font-size: 1.2em;
+    font-family: "AvenirNextLTPro-Regular";
+    margin-bottom: 20px;
+}
+
+.self {
+    background-image: url("../img/portrait2.jpg");
+    background-position: top;
+    border-radius: 150px;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 200px;
+}
+
+
+/* Footer */
+
+.footer {
+    height: auto;
+    background-color: #D3D3D3;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 50px;
+    font-family: "AvenirNextLTPro-Regular";
+}
+
+.footer a:visited {
+    color: black;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* About */
+
+.about-header {
+    background-color: #eff3f3;
+    background-image: url(../img/abt.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45%;
+    background-position: right 0px bottom -106px;
+}
+
+.about-header header {
+    font-family: "AvenirNextLTPro-Regular";
+    text-align: center;
+    font-size: 75px;
+    vertical-align: middle;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    color: white;
+    margin-right: 20%;
+    margin-left: 20%;
+    position: relative;
+    top: 25%;
+}
+
+.abt-header {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 200px;
+    font-size: 2em;
+    font-family: "AvenirNextLTPro-Regular";
+}
+
+.abt-header2 {
+    width: 200px;
+    height: 200px;
+    left: 0;
+    margin-left: 200px;
+    font-size: 2em;
+    font-family: "AvenirNextLTPro-Regular";
+}
+
+.About-Wrapper {
+    height: 400px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F1F1F1;
+}
+
+.about-content {
+    width: 70%;
+    position: absolute;
+    right: 0;
+    line-height: 35px;
+}
+
+
 /*
 .lightbox {
     /** Default lightbox to hidden
@@ -259,52 +249,259 @@ outline: none;
 display: block;
 } */
 
-br {
-    text-indent: 2em;
+
+/* School */
+
+.school-header {
+    background-color: #eff3f3;
+    background-image: url(../img/keyboard1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45%;
+    background-position: right 0px bottom 50px;
+}
+
+.school-header header {
+    font-family: "AvenirNextLTPro-Regular";
+    text-align: center;
+    font-size: 75px;
+    vertical-align: middle;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    color: white;
+    margin-right: 20%;
+    margin-left: 20%;
+    position: relative;
+    top: 25%;
+}
+
+.Year1 {
+    text-align: center;
+    background-color: #F1F1F1;
+}
+
+.Year2 {
+    text-align: center;
+    background-color: #EDEDED;
+}
+
+.Year3 {
+    text-align: center;
+    background-color: #E9E9E9;
+}
+
+.Year4 {
+    text-align: center;
+    background-color: #E4E4E4;
+}
+
+.years {
+    font-size: 2em;
+    font-family: "AvenirNextLTPro-Regular";
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.school-content {
+    width: 45%;
+    height: 420px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
 }
 
 .fresh,
 .sophomore,
 .junior,
-.App {
-    background: rgba(239, 243, 243, .5);
-    text-indent: 2em;
-    margin-left: 20%;
+.senior {
+    font-size: 1.3em;
+    font-family: "AvenirNextLTPro-Regular";
+    width: 50%;
+    position: absolute;
+    right: 20px;
+    line-height: 30px;
+}
+
+.school-content img {
+    left: 0;
+    display: inline-block;
+    position: absolute;
+}
+
+
+/* Contact */
+
+.contact-header {
+    background-color: #eff3f3;
+    background-image: url(../img/phone.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45%;
+    background-position: right 0px bottom 50px;
+}
+
+.contact-header header {
+    font-family: "AvenirNextLTPro-Regular";
+    text-align: center;
+    font-size: 75px;
+    vertical-align: middle;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    color: white;
     margin-right: 20%;
-    float: right;
-    border-radius: 20px;
-    padding: 20px;
-    font-family: "AvenirNextLTPro-Regular";
-}
-
-h4 {
-    text-align: center;
-    font-family: "AvenirNextLTPro-Regular";
-    font-size: 25px;
-}
-
-#Letterm {
-    text-align: center;
+    margin-left: 20%;
     position: relative;
-}
-
-#darkland {
-    padding: 10px;
-    padding-top: 40px;
-}
-
-img {
-    text-align: center;
+    top: 25%;
 }
 
 .cont {
-    text-align: center;
     font-family: "AvenirNextLTPro-Regular";
-    font-size: 35px;
+    font-size: 1.7em;
+    text-align: center;
+    margin: 75px;
 }
 
-.years {
-    text-align: center;
-    font-family: "AvenirNextLTPro-Regular";
-    font-size: 20px;
+a.lightbox:visited {
+    color: black;
+}
+
+a.lightbox {
+    color: black;
+}
+
+.lightbox-img {
+    width: 800px;
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+    position: fixed;
+    right: 0;
+    top: -100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    overflow: hidden;
+}
+
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target div {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    max-height: 0%;
+    max-width: 0%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    background-image: url("../img/MatthewResume.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 99999999999;
+}
+
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+    display: block;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top: 10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top: 10px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+}
+
+.lightbox-target:target div {
+    max-height: 800px;
+    max-width: 584px;
+}
+
+.lightbox-target:target a.lightbox-close {
+    top: 0px;
+    z-index: 9999;
+    position: absolute;
 }
